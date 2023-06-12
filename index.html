@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Tavodev93</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- Seccion Inicio -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="img/foto.png" alt="">
+        </div>
+        <h1>Gustavo De La Hoz</h1>
+        <h2>Full Stack Developer</h2>
+        <div class="redes">
+          <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/Tavodev93" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/gustavo-delahoz/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+          <h2>Sobre Mí</h2>
+          <p><span>Hola, soy Gustavo De La Hoz.</span> Cuento con mas de 3 años de experiencia como especialista de datos y la digitalización en programas contables. Actualmente me encuentro desempeñando diseños y programaciones web. Me distingo por mi colaboración en trabajo en equipo y adaptabilidad a los cambios.</p>
+
+          <div class="fila">
+              <!-- datos personales -->
+              <div class="col">
+                  <h3>Datos Personales</h3>
+                  <ul>
+                      <li>
+                          <strong>Fecha de nacimiento</strong>
+                          02-05-1993
+                      </li>
+                      <li>
+                          <strong>Teléfono</strong>
+                          +57 (323) 3977260
+                      </li>
+                      <li>
+                          <strong>Email</strong>
+                          gustavo_dlhoz@hotmail.com
+                      </li>
+                      <li>
+                          <strong>Website</strong>
+                          www.tavodev93.com
+                      </li>
+                      <li>
+                          <strong>Dirección</strong>
+                          Cartagena, Colombia
+                      </li>
+                      <li>
+                          <strong>Cargo</strong>
+                          <span>FREELANCE</span>
+                      </li>
+                  </ul>
+              </div>
+
+              <!-- intereses -->
+              <div class="col">
+                  <h3>Intereses</h3>
+                  <div class="contenedor-intereses">
+                      <div class="interes">
+                          <i class="fa-solid fa-gamepad"></i>
+                          <span>JUEGOS</span>
+                      </div>
+                      <div class="interes">
+                          <i class="fa-solid fa-headphones"></i>
+                          <span>MUSICA</span>
+                      </div>
+                      <div class="interes">
+                          <i class="fa-solid fa-plane"></i>
+                          <span>VIAJAR</span>
+                      </div>
+                      <div class="interes">
+                          <i class="fa-brands fa-apple"></i>
+                          <span>MAC OS</span>
+                      </div>
+                      <div class="interes">
+                          <i class="fa-solid fa-dumbbell"></i>
+                          <span>DEPORTE</span>
+                      </div>
+                      <div class="interes">
+                        <i class="fa-solid fa-film"></i>
+                          <span>PELICULAS</span>
+                      </div>
+                      <div class="interes">
+                          <i class="fa-solid fa-car"></i>
+                          <span>AUTOS</span>
+                      </div>
+                      <div class="interes">
+                        <i class="fa-solid fa-code"></i>
+                          <span>PROGRAMAR</span>
+                      </div>
+                      
+                  </div>
+              </div>
+          </div>
+          <button>
+            <a download="CV Gustavo De La Hoz" href="Curriculum Gustavo De La Hoz.pdf">Descargar CV</a> <i class="fa-solid fa-download"></i>
+              <span class="overlay"></span>
+          </button>
+      </div>
+  </section>
+
+  <!-- SECCION SKILLS -->
+  <section class="skills" id="skills">
+    <div class="contenido-seccion">
+      <h2>Skills</h2>
+      <div class="fila">
+        <!-- Technical Skill -->
+        <div class="col">
+          <h3>Technical Skills</h3>
+          <div class="skill">
+            <span>javascript</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>75%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>HTML & CSS</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>90%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>WordPress</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>95%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Backend</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>81%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Professional Skills -->
+        <div class="col">
+          <h3>Professional Skills</h3>
+          <div class="skill">
+            <span>Comunicación</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>75%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Trabajo en Equipo</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>85%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Dedicación</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>90%</span>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <span>Proyect Management</span>
+            <div class="barra-skill">
+              <div class="progreso">
+                <span>80%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCION CURRICULUM -->
+  <section id="curriculum" class="curriculum">
+    <div class="contenido-seccion">
+      <h2>Curriculum</h2>
+      <div class="fila">
+        <div class="col izquierda">
+          <h3>Educación</h3>
+          <div class="item izq">
+            <h4>Gestión Logística</h4>
+            <span class="casa">Universidad Tecnológico Comfenalco</span>
+            <span class="fecha">2013-2016</span>
+            <p> La gestión logística permite desempeñar labores relacionadas con la planeación de ventas y operaciones, asi como el proceso relacionado con el transporte y la distribución, en los ámbitos operativos, almacenes y zonas de distribución.</p>
+            <div class="conectori">
+              <div class="circuloi"></div>
+            </div>
+          </div>
+          <div class="item izq">
+            <h4>Programación Básica</h4>
+            <span class="casa">Academia de platzi</span>
+            <span class="fecha">Octubre 2022 - Octubre 2022</span>
+            <p>Aprendí HTML, CSS y JAVASCRIPT desde cero, entendiendo la lógica de los códigos y pensar como los programadores expertos.</p>
+            <div class="conectori">
+              <div class="circuloi"></div>
+            </div>
+          </div>
+          <div class="item izq">
+            <h4>Full Stack Developer con Javascript</h4>
+            <span class="casa">Academia de platzi</span>
+            <span class="fecha">Noviembre 2022 - Agosto 2023</span>
+            <p>Aprendí a construir aplicaciones y sitios web tanto backend como frontend, usando javascript, node y react.</p>
+            <div class="conectori">
+              <div class="circuloi"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col derecha">
+          <h3>Experiencia de trabajo</h3>
+          <div class="item der">
+            <h4>Especialista en datos</h4>
+            <span class="casa">Empresa Sermoinova</span>
+            <span class="fecha">Enero 2018 - Enero 2022</span>
+            <p>estuve encargado del área de recepción de facturas físicas y electrónicas, digitalizar las facturas en los programas contables y organizar los pagos de la nomina.</p>
+            <div class="conectord">
+              <div class="circulod"></div>
+            </div>
+          </div>
+          <div class="item der">
+            <h4>Programador y desarrollador web</h4>
+            <span class="casa">Empresa Batatabit</span>
+            <span class="fecha">Noviembre 2022 - Noviembre 2022</span>
+            <p>Encargado de la programación web para la realización de la pagina web. El sitio web se creo con HTML5 y CSS3, de esta manera se realizo el diseño total del sitio web.</p>
+            <div class="conectord">
+              <div class="circulod"></div>
+            </div>
+          </div>
+          <!-- <div class="item der">
+            <h4>Front Developer</h4>
+            <span class="casa">Nombre de la empresa</span>
+            <span class="fecha">2013-2016</span>
+            <p>Aprendi a construir aplicaciones y sitios web tanto backend como frontend, usando javascript, node y react..</p>
+            <div class="conectord">
+              <div class="circulod"></div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCION PORTFOLIO -->
+  <section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+      <h2>PORTFOLIO</h2>
+      <div class="galeria">
+        <div class="proyecto">
+          <img src="img/Batabit.png" alt="">
+          <div class="overlay">
+            <a href="https://batabitcoin.netlify.app/" target="_blank"><h3>Batatabit</h3></a>
+            <p>HTML CSS</p>
+          </div>
+        </div>
+        <div class="proyecto">
+          <img src="img/TODO Machine.png" alt="">
+          <div class="overlay">
+            <a href="https://tavodev93.github.io/TODO-App/" target="_blank"><h3>TODO App</h3></a>
+            <p>React.js</p>
+          </div>
+        </div>
+        <div class="proyecto">
+          <img src="img/Platzi Travel.png" alt="">
+          <div class="overlay">
+            <a href="https://platzitravelworld.netlify.app/" target="_blank"><h3>Platzi Travel</h3></a>
+            <p>Fotografia</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+            <!-- Formulario -->
+            <div class="col">
+              <form   class="form-register"
+                      action="https://formspree.io/f/mzbqllky"
+                      method="POST">
+                <input type="text" name="nombres" id="nombres" placeholder="Tú Nombre Completo">
+                <input type="text" name="numero" id="numero" placeholder="Número telefónico">
+                <input type="text" name="correo" id="correo" placeholder="Dirección de correo">
+                <input type="text" placeholder="Tema">
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <button type="submit" value="ENVIAR MENSAJE">
+                     Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                </button>
+              </form>
+            </div>
+            <!-- Mapa -->
+            <div class="col">
+                <img src="img/ubicacion.png" alt="">
+                <div class="info">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Cartagena De Indias, Colombia
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            WhatsApp: +57 (323) 3977260  
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            Email: gustavodelahoz93@gmail.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="#inicio" class="arriba">
+    <i class="fa-solid fa-angles-up"></i>
+  </a>
+  <div class="redes">
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://github.com/Tavodev93" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/gustavo-delahoz/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+  </body>
+</html>
